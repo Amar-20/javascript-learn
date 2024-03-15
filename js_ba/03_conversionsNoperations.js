@@ -64,26 +64,26 @@
 //****************************************************************************Operations ****************************************************************************/
 
 
-console.log(2+2)
-console.log(2-2)
-console.log(2*5)
-console.log(2**4)
-console.log(2/4)
-console.log(2%11)
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*5)
+// console.log(2**4)
+// console.log(2/4)
+// console.log(2%11)
 
 
-let str="Amar"
-let str1=" konangeri"
-let str2= str+str1
-console.log(str2)
+// let str="Amar"
+// let str1=" konangeri"
+// let str2= str+str1
+// console.log(str2)
 
-console.log("1"+2)
-console.log(2+"1")
-console.log(1+2+"33")  //  only here addition works. this is as per ECMAS Script
+// console.log("1"+2)
+// console.log(2+"1")
+// console.log(1+2+"33")  //  only here addition works. this is as per ECMAS Script  becoz in js code is evaluates expression from left to right.
 
-console.log("1"+2+33)  // But, here addition doesn't work.
-console.log(+true)
-console.log()
+// console.log("1"+2+33)  // But, here addition doesn't work. Becoz here js takes entire expression as string because the first operand is string.
+// console.log(+true)
+// console.log()
 
 
 // Imcrement(++)

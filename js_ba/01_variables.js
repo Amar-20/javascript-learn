@@ -1,12 +1,12 @@
 // Variables and constants
-// note :----Varibales are case sencitive.
+// note :----Varibale names are case sencitive.
 const  accountId=1432;          //////Here 'const' is the keyword,'accountId' is the variable name and it does't change if we assign a new value in future.
 let accountEmail= 'mail@1234';
 var accountNumber='54321';     //Perfer not to use var while assigning variable names, becoz of issue in block scope and functional scope
-accountCity='hyderabad';      // javascript is fergiving but, don't use this type of variable naming.
+accountCity='hyderabad';      // javascript is forgiving but, don't use this type of variable naming(with out a keyword)
 
 
-let accountCountry                // Here we can just name the variable without giving the variable value to it.
+let accountCountry;            // Here we can just name the variable without giving the variable value to it.
 
 // These are the sample results if we chnage the variable values
 // accountId=432                // not allowed

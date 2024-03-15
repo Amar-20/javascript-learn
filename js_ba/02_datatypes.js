@@ -5,10 +5,10 @@
   
 "use strict"        // just to indecate that we are using the newer version of js
 let name='Amar'    //String (Here Amar is the string ) 
-let number=420    // Number  
+let number=420.2    // Number  
 let Yesorno=true //Boolean (just True or false)
 let country;   //Unidentified (unidentified and here only varibale name is defined)
-let binary=0  //Null 
+let binary=null  //Null 
 const id=Symbol("1234")
 const anotherId = Symbol('1234')
  
@@ -45,4 +45,4 @@ console.log(myfunction);
 console.log(typeof myfunction);
 console.log(typeof heros);
 console.log(typeof myBio);
-console.log(typeof id);
+console.log(typeof binary);
