@@ -17,4 +17,8 @@ console.log(mentor)                     /* This is also  called as de-structuing
 
 
 
-/*  */
+/* JSON API intro */
+
+{
+  "amar":"name"     /* Json format.  JSON format can also be array of objects. */
+}
