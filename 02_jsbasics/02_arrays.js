@@ -31,7 +31,11 @@ console.log(Array.isArray(name))       //// This is to check a give element is a
 //////////////////////////////////////// now we convert it to array.
 
 const arrayName= "Amar"
-console.log(Array.from(arrayName))    /// Now the name is converted it array.
+// const arr=Array.from(arrayName)   /// Now the name is converted it array.
+// console.log(arr)
+
+////////or///
+console.log(Array.from(arrayName))
 
 
 

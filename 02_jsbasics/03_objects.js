@@ -2,8 +2,8 @@
 
 // There are two ways to declear a object
 // 1)object literals
-// 2)object constructor
-
+// 2)object constructor(singleton)
+//////////////////////////////////////////////////////////////   Type 1   //////////////////////////////////////////////////////////////////////////
 
 const myarr=[1,'amar',456,'michigan']     /// Declearing the array
 const mysymb=Symbol('Hero')               /// Declearing the symbol
