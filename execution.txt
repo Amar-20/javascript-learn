@@ -70,7 +70,7 @@ Then after, same above steps repeats like
 * total > 15  (And this 'total' will return to its parental executional context(global execution context))
 
                                                                               
-                                                                            
+                                                      call Stack                      
 
 When a function is invoked, a function stack context is created for that function and pushed onto the call stack. 
 Once the function's execution is complete, its context is removed from the stack. 
