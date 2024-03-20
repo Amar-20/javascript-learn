@@ -1,0 +1,81 @@
+
+
+                                  Javascript Execution context
+
+The JavaScript execution context is a fundamental concept that governs how JavaScript code is executed. 
+It involves the creation of an 'global execution context'  or 'global environment'(This) that manages the transformation and execution of code. 
+There are two main types of execution contexts: 
+
+1) global Execution context and 
+2) function Execution context.
+
+The global execution context is established when a script first runs, representing the global scope,
+while a function execution context is created when a function is called, representing the function's local scope.
+
+NOW, "When javascript code go to execution context runtime, this allocates memory variables, functions and then executes the code."
+
+The process involves two phases: 
+1)Merory creation phase and 
+2)execution phase. 
+
+In the creation phase, the engine sets up the script's environment by determining variable values, setting up the scope chain, and creating memory space for variables and functions. 
+
+The execution phase involves processing statements, expressions, and function calls in the script.
+
+
+let val1=10
+let val2=5
+function addNum(num1,num2){
+    let total=num1+num2
+    return total
+
+}
+let result1=addNum(val1,val2)
+let result2=addNum(10,2)
+
+In the above example first global execution is created. And after 
+
+---Memory phase in this---
+* val1 > undefined
+* val2 > undifined
+* addNum > function defination
+* result1 > undefined
+* result2 > undefined
+
+Then comes execution phase
+
+----Execution phase---
+* val1 >10
+* val2 > 5
+* addNum    -------------->>  This will create a seperate exectuional Context file.(line 55 to 63 happens here.)This executional context file will get deleted after phase.
+                                (Which has new variable environment + execution thread) ||[ This is called functional executiional context]
+ result1 > 15 
+
+* addNum  ------------------>> This will agin create seperate exectuional context file Same as above. ends up giving the result2 and deletes after the process.
+ result >12
+
+
+
+
+Then after, same above steps repeats like 
+
+----Memory phase----
+* val1 >undefined
+* val2 > undefined
+* total > undefined
+
+----Execution phase----
+* num1 >10
+* num2 >5
+* total > 15  (And this 'total' will return to its parental executional context(global execution context))
+
+                                                                              
+                                                                            
+
+When a function is invoked, a function stack context is created for that function and pushed onto the call stack. 
+Once the function's execution is complete, its context is removed from the stack. 
+The call stack has a fixed size, and exceeding this limit can lead to a stack overflow error, typically seen in recursive functions without base conditions
+
+
+
+                                      
