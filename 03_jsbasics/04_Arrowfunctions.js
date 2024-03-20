@@ -50,15 +50,18 @@ aur()                                // {}
 
 
 // }
-// console.log(addOne(3,3))        
+// console.log(addOne(3,3))    
+
+
 
 
 /** we can also define above code in this manner */
 
-// const addone=(num1,num2)=>(num1+num2)
-const addone=(num1,num2)=>({username:"Amar"})    //  here we are returing an object '({})'
-console.log(addone(username, 420)) 
-console.log(typeof username)
+// const addone=(num1,num2)=>num1+num2             // implicit return
+const addone=(num1,num2)=>(num1+num2)             // implicit return
+// const addone=(num1,num2)=>({username:"Amar"})    //  here we are returing an object '({})'
+// console.log(addone(username, 420)) 
+// console.log(typeof username)
 
 
 
