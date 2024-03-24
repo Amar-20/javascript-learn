@@ -12,7 +12,7 @@ let accountCountry;            // Here we can just name the variable without giv
 // accountId=432                // not allowed
 // accountEmail='234@mail'     // This is allowed and value is also chnaged 
 // accountNumber='09876'      //This is allowed but, it's not advisable to use.
-// accountCity='bangalore'   // This  is allowed but , it's the best practice to use this way to either to name a variable and change a varibale name.
+// accountCity='bangalore'   // This  is allowed but , it's not the best practice to use this way to either to name a variable and change a varibale name.
  
 console.log(accountCity);
 console.table([accountId,accountEmail,accountNumber,accountCity,accountCountry]) // We can print multiple number of outputs in a table format.
