@@ -1,13 +1,13 @@
             // There are two types of datatypes 
-       // 1) Primitive datatypes or Value Types ( These are call by value.chnages are made in the copy data.)
-       // These are of 7 types in this
+       // 1) Primitive datatypes or Value Types ( These are called by value. Changes are made in the copy data.)
+       // These are of 7 types.
   
   
-"use strict"        // just to indecate that we are using the newer version of js
+"use strict"        // just to indicate that we are using the newer version of js
 let name='Amar'    //String (Here Amar is the string ) 
 let number=420.2    // Number  
 let Yesorno=true //Boolean (just True or false)
-let country;   //Unidentified (unidentified and here only varibale name is defined)
+let country;   //Unidentified (unidentified and here only variable name is defined)
 let binary=null  //Null 
 const id=Symbol("1234")
 const anotherId = Symbol('1234')
