@@ -24,7 +24,9 @@ console.log(savename.concat(1234))
 console.log(savename.indexOf("J"))
 console.log(savename.substring(1,11))
 console.log(savename.slice(4,9))
-console.log(savename.split())              // to split a string we use splitter(can be number ,space , symbol) ,(comma) and limit number(upto which string can be split)
+console.log(savename.split( ))            // Look for space in between the paranthesis. o/p:- ['My name is John']
+console.log(nameSave.split(" "))          //o/p:- ['my','name','is','John']
+
 const gameName="   Amar     "        
 console.log(gameName.trim())                  // Trim will eliminate both staring and ending spaces.  we also have trim start and trim end.
 
