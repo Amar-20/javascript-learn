@@ -8,7 +8,8 @@ let name='Amar'    //String (Here Amar is the string )
 let number=420.2    // Number  
 let Yesorno=true //Boolean (just True or false)
 let country;   //Unidentified (unidentified and here only variable name is defined)
-let binary=null  //Null 
+let binary=null  //Null
+const bigInt =12345675433450n  //bigint 
 const id=Symbol("1234")
 const anotherId = Symbol('1234')
  
