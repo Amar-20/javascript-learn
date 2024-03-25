@@ -9,14 +9,14 @@ const myarr=[1,'amar',456,'michigan']     /// Declearing the array
 const mysymb=Symbol('Hero')               /// Declearing the symbol
 const myObj = {
     name:"Amar",
-    "full name":'kogeri',
+    fullname:'kogeri',
     age:27,
     location:"michigan",
     email:"amar@google.com",
     loggedIn:false,
     lastLoggedIn:['sataday','sunday','friday'],
-    myarry: myarr,                                        //// declering the array outside and including it in object.(Using array as a key name)
-    [mysymb]:'hero'
+    myarry: myarr,                                        //// declaring the array outside and including it in object.(Using array as a value name)
+    [mysymb]:'hero'                                      ////  Always Declear SYMBOL in square brackets[] 
 
 }
 
