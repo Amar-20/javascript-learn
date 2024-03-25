@@ -15,7 +15,7 @@ const myObj = {
     email:"amar@google.com",
     loggedIn:false,
     lastLoggedIn:['sataday','sunday','friday'],
-    myarry: myarr,                                        //// declering the array outside and including it in object.(Using array as a key name)
+    myarry: myarr,                                        //// declering the array outside and including it in object.(Using array as a value name)
     [mysymb]:'hero'
 
 }
