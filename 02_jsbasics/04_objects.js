@@ -24,7 +24,7 @@ const anotherapp={
     }
 }
 
-console.log(anotherapp.fullname?.username?.firstname);  //  optional chaining (?)
+console.log(anotherapp.fullname?.username?.firstname);  //  optional chaining (?) This helps in avoiding errors that would otherwise occur if any intermediate property in the chain is null or undefined.
 
 
 
