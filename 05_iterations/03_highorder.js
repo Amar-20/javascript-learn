@@ -95,7 +95,7 @@ for (const key in map) {                 /// maps are not iteratble.
 
 
 // const code=['js','java','python','c','ruby']
-// code.forEach( function (val){                      // callback function 
+// code.forEach( function (val){                      // callback function. Here call back  functions don't have function names
 //     console.log(val)
 // })
 
