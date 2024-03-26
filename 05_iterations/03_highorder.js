@@ -36,7 +36,7 @@ x.set('IN',"India")
 x.set('CH',"China")
 x.set('RUS',"Russia")
 // x.set('IN',"India")     
-                                               /** The Map object holds key-value pairs and remembers the original insertion order of the keys.
+                                               /** The Map object holds key-value pairs and remembers the original insertion order of the keys. And Map() have unique values only
                                                            *  Any value (both objects and primitive values) may be used as either a key or a value. and these are not iteratable. */
 
  
