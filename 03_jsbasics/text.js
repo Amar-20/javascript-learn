@@ -7,4 +7,4 @@
     console.log(`hello`)                 // IIFE
 })
 () ;
-
+(()=>(console.log("hello")))()
