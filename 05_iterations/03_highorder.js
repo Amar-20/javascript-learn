@@ -62,9 +62,9 @@ console.log(x);
 /**************************************************************************** for in loop on object ****************************************/
 
 const myobj={
-    'java':"spring",
-    'js':"node",
-    'swift':"swift by apple"
+    java:"spring",
+    js:"node",
+    swift:"swift by apple"
 }
 for (const key in myobj) {
     console.log(`${key}:-${myobj[key]}`)        ///The for...in statement iterates over all enumerable string properties of an object (ignoring properties keyed by symbols), including inherited enumerable properties.
