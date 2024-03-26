@@ -12,7 +12,7 @@ There are two main types of execution contexts:
 The global execution context is established when a script first runs, representing the global scope,
 while a function execution context is created when a function is called, representing the function's local scope.
 
-NOW, "When javascript code go to execution context runtime, this allocates for memory variables, functions and then executes the code."
+NOW, "When javascript code go to execution context runtime, this allocates memory for variables, functions and then executes the code."
 
 The process involves two phases: 
 1)Merory creation phase and 
