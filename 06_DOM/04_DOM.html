@@ -12,6 +12,17 @@
     </ul>
 </body>
 <script>
+    //--------------------------------------------------------- Adding a list item to Ul before using the function.
+    const myUl=document.querySelector('.javascript')
+    myUl.id='first'
+    const newLi=document.createElement('li')                  // Here we have to create new element for each list item.
+    myUl.appendChild(newLi).innerText='Python'
+    console.log(myUl)
+    
+
+
+
+    // -----------------------------------------------------------------------Adding a list item using function.
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
