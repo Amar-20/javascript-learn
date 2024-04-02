@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: grey;">
+    <h1>Chai Aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Amar")
+    // },2000)                         // This method calls any API
+
+
+    // const sayAmar = function(){
+    //     console.log("Amar")
+    // }
+    // setTimeout(sayAmar,2000)             // First difine a function and than calling it with handler timeout(here 2000)
+
+
+
+    const changeText=function(){
+    document.querySelector('h1').innerText="Best Javascript tutorial"
+    }
+     const Stopme=setTimeout(changeText,4000)           // after 4sec text changes.
+
+
+    // clearTimeout(Stopme)                  // It will fully stop the setTimeout function.so,
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(Stopme)
+        console.log('STOPED')
+    })                                           // This is to stop setTimeout function before its execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</script>
+</html>

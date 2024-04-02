@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: grey;">
+    <h1>Chai Aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Amar")
+    // },2000)
+
+
+
+    // const sayName=function(){
+    //     console.log("Amar!")
+    // }
+    // setInterval(sayName,2000)
+
+    const sayDate=function(str){
+        console.log(str,Date.now());
+
+    }
+    let intervalID;                                      // Here variable(reference is taken out side the scope) is defined outside the scope and used it inside the #start eventlistener.
+    console.log(typeof intervalID)
+     
+
+    // clearInterval(intervalId)
+
+
+    document.querySelector('#start').addEventListener('click',function(e){
+        intervalID=setInterval(sayDate,2000,'Hello!')                        //Here variable is defined 
+        console.log('Started')
+
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(e){
+        clearInterval(intervalID)
+        console.log('STOPPED')
+    })
+
+    // const intervalId=setInterval(sayDate,2000,'Hello')
+
+    
+
+
+
+
+
+
+
+</script>
+</html>
