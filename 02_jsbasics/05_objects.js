@@ -7,8 +7,9 @@
 
   } 
 
-// const { coursementor} =course         /* This is called de_strructuing the object */
+// const { coursementor,cost} =course         /* This is called de_strructuing the object. | instead of accessing every time like  console.log(course.coursementor)*/
 // console.log(coursementor)
+//console.log(cost)                            /* instead of accessing every time like  console.log(course.cost)*/
 
 
 const {coursementor:mentor}=course
