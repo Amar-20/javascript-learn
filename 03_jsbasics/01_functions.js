@@ -155,10 +155,10 @@ console.log(loggin())
 
 //  console.log(handleingObject(user))   //OR
 
-handleingObject({
+console.log(handleingObject({
  username: "amar",
  price:402
-})                                // we can directly insert an object in arguments... rather than declaring it before the function.
+}))                               // we can directly insert an object in arguments... rather than declaring it before the function.
 
 
 /**************************************************** Using Arrays in functions(passing objects in functions)******************************************************* */
