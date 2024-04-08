@@ -98,7 +98,7 @@ console.log(loggin())
 // }
 // // loginUserMessage("Hello! Amar")           // there is no print function to display the output
 
-// console.log(loginUserMessage("Hello! Amar"))     // Now it will print the output. If there is no vakue passed it will display undefined. To avoid this we use ifand if-else.(below example)
+// console.log(loginUserMessage("Hello! Amar"))     // Now it will print the output. If there is no value passed it will display undefined. To avoid this we use ifand if-else.(below example)
 
 /*************************************************************************************************************************************************************************** */
 
@@ -144,17 +144,21 @@ console.log(loggin())
 /************************************************ Using objects in functions(passing objects in functions)  ************************************************************/
 
 //  const user={
-//     username:"Amar",
+//     username: "Amar",
 //     price:200
 //  }
 
-//  function handleingObject(object){
-//     return `username is ${object.username} and price is ${object.price}`  // In this type of method we have to be careful  with type safty. 
+//  function handleingObject(anyobject){
+//     return `username is ${anyobject.username} and price is ${anyobject.price}`  // In this type of method we have to be careful  with type safty. 
 
 //  }
 
-//  console.log(handleingObject(user))
+//  console.log(handleingObject(user))   //OR
 
+handleingObject({
+ username: "amar",
+ price:402
+})                                // we can directly insert an object in arguments... rather than declaring it before the function.
 
 
 /**************************************************** Using Arrays in functions(passing objects in functions)******************************************************* */
