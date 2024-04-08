@@ -20,6 +20,46 @@ console.log("Result:-",result)
 
 
 
+ function add(num1,num2){
+    return num1+num2
+}
+const  result=add(12,34)
+console.log(result)
+
+
+function loggin(username){
+    if(username==undefined){
+        console.log('please enter a username')
+        return
+
+    }
+
+    return`${username} just logged in`
+}
+console.log(loggin())                                           // Undefined so its o/p is please enter a username
+
+
+
+
+function loggin(username='shiv'){                            //default value is given and we don't enter the if condition.
+    if(username==undefined){
+        console.log('please enter a username')
+        return
+
+    }
+
+    return`${username} just logged in`
+}
+console.log(loggin())
+
+
+
+
+ 
+ 
+
+
+
 
 //  function sayMyName(firstn,lastn){
 
