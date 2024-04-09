@@ -5,8 +5,8 @@
 // function add(num1,num2){
 //     console.log(num1+num2)
 // }
-// const result=add(12,4)
-// console.log(result)
+// const result=add(12,4)                                  //We can hold the call function in a variable.
+// console.log(result)                                     //  Result's o/p is Undefined becz function is not returning any thing.
 
 
 function add(num1,num2){
