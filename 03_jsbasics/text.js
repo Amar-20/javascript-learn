@@ -7,4 +7,29 @@
     console.log(`hello`)                 // IIFE
 })
 () ;
-(()=>(console.log("hello")))()
+
+
+
+(()=>(console.log("hello")))();
+
+
+
+(function user(){
+    console.log("Amar")
+})();
+
+
+
+( ()=>{
+    console.log("code")
+} )();
+
+
+    
+
+(()=>console.log("code"))();
+
+
+(()=>(console.log("code")))();
+
+
