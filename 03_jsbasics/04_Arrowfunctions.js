@@ -17,8 +17,7 @@ userData.welcomeGreeting()
 console.log(this)                                    //This output referes to empty object.(In node environment).But in browser its window object(window object)
 
 
-/*************************************************************** Arrow Function  ******************************************************* */
-
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 function code(){
     const username="Amar"
@@ -33,6 +32,25 @@ const chai= function(){
 }
 
 chai()                                 // undifined. Same as above with different function declaration.
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* In Node Environment. In normal function declaration. If we console.log 'this' keyword it will result in  some values like :- global:,clearInmmediate,setImmediate etc,.*/
+function ab(){
+    let user="Amar"
+    console.log(this)
+}
+ab()
+
+
+/* In node Environment. In the Arrow function declaration. If we console.log() 'this' keyword it will result in {} empty object */
+
+const code= ()=>{
+    let user="Amar"
+    console.log(this)
+}
+code()
+
+
 
 /********************************************************* Arrow functions syntax **************************************/
 
