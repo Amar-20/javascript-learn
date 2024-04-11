@@ -76,7 +76,7 @@ console.log(newNum)
 newNum=myNumb.map( (num)=>num *10).map( (num)=> num+1  )           //chaining
 console.log(newNum)                                          
 
-newNum=myNumb.map( (num)=>num *10).map( (num)=> num+1  ).filter((num)=>num>=51)           //chaining map().map().filter()
+newNum=myNumb.map( (num)=>num *10).map( (num)=> num+1  ).filter((num)=>num>=51)           //chaining map().map().filter()  /// Note:- The first map() makes the changes and provides an array and when it comes to the second map() it makes the changes from the changed Array from the first map().and so on
 console.log(newNum)
 
 /*************************************************************************************** Reduce()  ****************************************************************/
