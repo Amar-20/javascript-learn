@@ -1,6 +1,10 @@
 /******************************************************************* Array specific loops  *******************************/
 
-/******************************************************* For of ***************************************/
+/******************************************************* For of **************************************
+The for...of loop in JavaScript is used to iterate over the values of an iterable object, such as an array, string, or map. 
+1)for...of loop iterates over the individual characters in a string 
+2)for...of loop iterates over the individual characters in a string.
+*/
 
 let myArry=[1,2,3,4,5,6,7,8]
 for (const num of myArry) {
@@ -59,7 +63,11 @@ console.log(x);
 
 // }
 
-/**************************************************************************** for in loop on object ****************************************/
+/**************************************************************************** for in loop on object ***************************************
+1) for...in loop iterates over the enumerable properties (keys) of an object.
+2) for...in loop iterates over the index properties of an array, which can include non-numeric properties added to the array.
+3) for...in loop iterates over the character indices of a string.
+*/
 
 const myobj={
     java:"spring",
