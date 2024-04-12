@@ -16,24 +16,25 @@
     </div>
 </body>
 <script>
-    const parent = document.querySelector('.parent')
+    const parent = document.querySelector('.parent')     // Selecting with Class name 
     // console.log(parent);
-    // console.log(parent.children);     // This results in HTML Collection so, to select an item we use indexing[].
-    // console.log(parent.children[1].innerHTML); // to print text.
+    // console.log(parent.children);                    // This results in HTML Collection so, to select an item we use indexing[].
+    // console.log(parent.children[0])                  // Selecting a particular child.(here Monday)
+    // console.log(parent.children[1].innerHTML);      // to print text.
 
     // for (let i = 0; i < parent.children.length; i++) {
     //      console.log(parent.children[i].innerHTML);
         
     // }
-    parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
+    parent.children[1].style.color = "orange"     // To chnage the color using style on second child
+    // console.log(parent.firstElementChild);    
     // console.log(parent.lastElementChild);
 
-    const dayOne = document.querySelector('.day')
+    const dayOne = document.querySelector('.day') 
     // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    // console.log(dayOne.parentElement);        // to know the child -> Parent Element
+    // console.log(dayOne.nextElementSibling);   // Tuesday
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes);   // to know the nodes(here 11). "Enter and Comment " also considered as nodes.
 </script>
 </html>
