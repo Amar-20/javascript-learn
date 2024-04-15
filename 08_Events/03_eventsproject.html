@@ -26,7 +26,7 @@
         console.log(str,Date.now());
 
     }
-    let intervalID;                                      // Here variable(reference is taken out side the scope) is defined outside the scope and used it inside the #start eventlistener.
+    let intervalID = null;                                      // Here variable(reference is taken out side the scope) is defined outside the scope and used it inside the #start eventlistener.
     console.log(typeof intervalID)
      
 
@@ -41,6 +41,7 @@
 
     document.querySelector('#stop').addEventListener('click',function(e){
         clearInterval(intervalID)
+        intervalID=null
         console.log('STOPPED')
     })
 
