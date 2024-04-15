@@ -104,6 +104,43 @@ buttons.forEach(function(button){
     })
 })
 ```
+### Alternate javascript code
+```javascript
+const AllButtons=document.querySelectorAll('.button')
+// console.log(AllButtons)
+const Body=document.querySelector("body")
+
+AllButtons.forEach((button)=>{
+    // console.log(button)
+    button.addEventListener('click',function(event){
+        console.log(event)
+        console.log(event.target)
+        switch (event.target.id) {
+            case 'grey':
+                Body.style.backgroundColor = event.target.id
+                
+                break;
+            case 'white':
+                Body.style.backgroundColor = event.target.id
+                
+                break;
+            case 'green':
+                Body.style.backgroundColor = event.target.id
+                
+                break;
+            case 'blue':
+                Body.style.backgroundColor = event.target.id
+                
+                break;
+        
+            default:
+                break;
+        }
+        
+
+    })
+});
+```
 
 # Project 2
 ## BMI Calculator
@@ -167,7 +204,3 @@ form.addEventListener('submit',function(e){
 
 ```
 
-
-
-# Project 3
-##
