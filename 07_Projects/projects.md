@@ -199,6 +199,19 @@ form.addEventListener('submit',function(e){
         const bmi =(Weight/(Height*Height)*10000).toFixed(2)
         result.innerHTML=`<span>${bmi}</span>`;
     }
+// Also display the Guide...........
+const BMI=(Weight/((Height*Height)/10000)).toFixed(2)
+
+    if(BMI<19){
+        result.innerHTML=`Under Weight: ${BMI}`
+    }
+    else if(BMI>19 && BMI<=24){
+        result.innerHTML=`Normal Weight:${BMI}`
+    }
+    else{
+        result.innerHTML=`Over Weight:${BMI}`
+    }
+
 
 })
 
