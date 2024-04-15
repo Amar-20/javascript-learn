@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -19,45 +19,56 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+     // javaScript events run in sequence manner
 
-     // attachEvent()
-    // jQuery - on
-
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
-
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
-
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    //  document.getElementById('owl').onclick=function(){
+    //     alert('Owl Clicked')
+    //  }       
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
+    // Event Propagation
+    // Their are two type of context they are 1)event Bubbling 2) Event capturing
+
+
+    // document.getElementById('owl').addEventListener("click",function(e){
+    //     // alert('clicked on Owl')
+    //     console.log(e)
+
+    // },false)            // Bubbling Event
+
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('clicked inside the Ul')
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log('clicked on the Owl')
+    //     e.stopPropagation()          // this will stop evnet bubbling form inner to outer.
+    // },false)
+
+    // document.querySelector('#google').addEventListener('click',function(e){
+    //     e.preventDefault()
     //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
-    
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
+
+    // },false)      // google stopped
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target.parentNode)
+        // let removeIt=e.target.parentNode
+        // removeIt.remove()                          // This is first type.
+        // removeIt.parentNode.removeChild(removeIt)  // This is second type.
+// --------------------------------------------------------------------------------------------
+        console.log(e.target.tagName)        // This gives tag name like IMG,LI,UL etc.,
+        if(e.target.tagName==="IMG"){
+            console.log(e.target.id)
+            let removeIt=e.target.parentNode
+            // removeIt.remove()
+            removeIt.parentNode.removeChild(removeIt)
+
         }
-    
-        
-    })
-    
-    //removeIt.parentNode.removeChild(removeIt)
+
+
+
+    },false)
+
 </script>
 </html>
