@@ -104,7 +104,7 @@ buttons.forEach(function(button){
     })
 })
 ```
-### Alternate javascript code
+### Alternate javascript code using Switch case:
 ```javascript
 const AllButtons=document.querySelectorAll('.button')
 // console.log(AllButtons)
