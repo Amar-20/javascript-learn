@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+<style>
+    table,th,td{
+        border-collapse: collapse; border: 2px solid black;padding: 5px;
+    }
+</style>
 </head>
 <body>
-    <h1>Hello!!</h1>
+    <h1 style="text-align: center;">Hello!!</h1>
+    <table>
+        <tr>
+            <th>Img</th>
+            <th>followers</th>
+        </tr>
+        <tr>
+            <td id="first"></td>
+            <td id="sec"></td>
+        </tr>
+    </table>
+    <!-- <div style=" display: flex; border: 4px solid black ;" class="card"></div>
+    <div style=" display: flex; border: 4px solid black ;" class="card"></div> -->
+    <button id="butt">Click Here</button>
+
     <!-- <p>Value	State	Description
         0	UNSENT	Client has been created. open() not called yet.
         1	OPENED	open() has been called.
@@ -15,9 +34,50 @@
         4	DONE	The operation is complete.</p> -->
 </body>
 <script>
-    const requestUrl='https://randomuser.me/api/'
-    const xhr = new XMLHttpRequest()   //Here XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh And also can be used to retrieve any type of data, not just XML.
-    xhr.open('GET',)
+    const requestUrl='https://api.github.com/users/hiteshchoudhary'
+
+    const xhr = new XMLHttpRequest()                                     //Here XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh And also can be used to retrieve any type of data, not just XML.
+    xhr.open('GET',requestUrl)    // open(method and hardcoded string(requestUrl))
+
+    console.log(xhr.readyState)                                        // this will show us the first stage.
+
+    xhr.onreadystatechange= function(){
+        console.log(xhr.readyState)
+            if(xhr.readyState === 4){
+
+
+                // let data = JSON.parse(this.responseText)        // In most cases when we use responseText property we the response in string format so to change it into Json we use JSON.parse. So that we can query and get the values in that object easly.
+                // console.log(data); 
+                // console.log(data.avatar_url)
+         
+                // console.log(this.responseText)                        // this. is used to when we talk about the current context.(It holds all the api data now.)
+
+
+
+                let data=JSON.parse(this.responseText)
+                console.log(data)
+                console.log(typeof data)
+                 const avatar=document.querySelector('#butt').addEventListener('click',function(e){
+                    console.log(data.avatar_url)
+                    console.log(data.followers)
+
+                    const CountV = document.createTextNode(data.followers)
+                    const tabletds=document.querySelector('#sec')
+                    tabletds.appendChild(CountV)
+
+
+                    const img = document.createElement('img');
+                    img.src=data.avatar_url
+
+                    const tabletdf = document.querySelector('#first')
+                    tabletdf.appendChild(img)
+                })
+            }
+        }                                                               // to contineously track it(next stages)
+        
+        
+        
+    xhr.send();
 
 
 </script>
