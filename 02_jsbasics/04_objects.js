@@ -2,7 +2,7 @@
 
 //****************************************     Singleton                  */
 
-// const myobj1= new Object()       /* new Object() is a constructor function that creates a new instance of the Object object. */
+// const myobj1= new Object()       /* new Object() is a constructor function that creates a new object instance. */
 const myobj={}                 /* {} is an object literal syntax that creates a new object directly without using a constructor function. */
 // console.log(myobj1)
 
