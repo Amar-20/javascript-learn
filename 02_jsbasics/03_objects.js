@@ -51,7 +51,7 @@ console.log(myObj.greeting())
 // Two types of accessing the object.
 console.log(myObj.email)         //   Accessing the object value with using key name(email).
 console.log(myObj["email"])
-console.log(myObj["full name"])  //  
+console.log(myObj["full name"])  //   When there is a gap in variable name we can't access it with (.name) so we use ['full name'](example)
 
 
 console.log(myObj[mysymb])       ///  Accessing the symbol in object. Syntax
