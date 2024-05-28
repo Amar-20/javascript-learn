@@ -1,6 +1,9 @@
 console.log(null>0)
-console.log(null>=0)  /* output is "True" because in javascript comparisons(<,>,>=,<=) work differently.  Becz here 'Null' is converted  as '0' */
-console.log(null==0)  // Output is "False" because in javascript "Equality Check"(==) work differently.   Becz here 'Null' is converted  as '0'
+console.log(null>=0)  /* output is "True" because in javascript comparisons(<,>,>=,<=) works differently.  Becz here 'Null' is converted  as '0' */
+console.log(null==0)  // Output is "False" because in javascript "Equality Check"(==) works differently.   
+
+//Note:- Equality check (==) and comparisons(>,<,=,<=) works differently.
+// Comparisons convert null to a number, treating it as 0.
 
 
 console.log(undefined>0)
