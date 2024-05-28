@@ -12,7 +12,7 @@ const newarry=myArr.concat(myArry)       /////concat joins two arrays
 console.log(newarry)
 
 
-////////////////////////////////////////////we can also use spread insted of concat.Becoz it will help expansion of elements from an iterable (like an array, object, or string) into another iterable or function call.
+////////////////////////////////////////////we can also use spread insted of concat.Becoz it will help expansion of elements from an iterable (like an array, or string) into another iterable or function call.
 
 
 const heros=[...myArr,...myArry]    /// spread operater
