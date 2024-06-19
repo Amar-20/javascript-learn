@@ -12,7 +12,7 @@
 //console.log(cost)                            /* instead of accessing every time like  console.log(course.cost)*/
 
 
-const {coursementor:mentor}=course
+const {coursementor:mentor}=course               // givving coursementor another name as just 'mentor'
 console.log(mentor)                     /* This is also  called as de-structuring of object */
 
 
