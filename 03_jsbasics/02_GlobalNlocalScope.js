@@ -1,3 +1,7 @@
+//{} -> this is scope.
+
+
+
 let a=20
 const cd = 40                   /* Every thing decleared outside the block scope is global scope. And we can not access the local scope values from global scope. */
 // var ef= 60
