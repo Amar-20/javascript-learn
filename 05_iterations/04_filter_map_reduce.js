@@ -115,3 +115,10 @@ const cart=arrobj.reduce((acc,items)=>acc+items.price,0)
 console.log(arrobj.reduce((acc,items)=>acc+items.price,0))
 console.log(cart)
 
+// filter () -> Filters elements based on a condition, Creates a new array with filtered elements	and true to include, false to exclude
+// map()    -> Transforms elements by applying a function and creates a new array with the transformed element. Any value is to be included in the new array.
+
+
+
+
+
