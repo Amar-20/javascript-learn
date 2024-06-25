@@ -1,0 +1,14 @@
+1) By default JavaScript is a Sequence and single thread language.
+
+Blocking code.
+* Blocking code blocks the flow of the program code.
+* Read file in Sync manner.
+
+
+Non-Blocking code.
+* Don't block the program execution.
+* Read file in Async manner.
+
+We use both blocking and non blocking code depending  on the usecase.
+
+
